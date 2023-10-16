@@ -1,7 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using TestDT1015.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<CinemaContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AZURE_MYSQL_CONNECTIONSTRING") ?? throw new InvalidOperationException("Connection string 'CinemaContext' not found.")));
 
 var app = builder.Build();
 
