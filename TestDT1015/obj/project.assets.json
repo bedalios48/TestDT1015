@@ -46,6 +46,19 @@
           }
         }
       },
+      "Google.Protobuf/3.21.9": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -637,6 +650,50 @@
         "resource": {
           "lib/net6.0/zh-Hant/Humanizer.resources.dll": {
             "locale": "zh-Hant"
+          }
+        }
+      },
+      "K4os.Compression.LZ4/1.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/K4os.Compression.LZ4.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/K4os.Compression.LZ4.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "K4os.Compression.LZ4.Streams/1.3.5": {
+        "type": "package",
+        "dependencies": {
+          "K4os.Compression.LZ4": "1.3.5",
+          "K4os.Hash.xxHash": "1.0.8",
+          "System.IO.Pipelines": "6.0.3"
+        },
+        "compile": {
+          "lib/net6.0/K4os.Compression.LZ4.Streams.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/K4os.Compression.LZ4.Streams.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "K4os.Hash.xxHash/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/K4os.Hash.xxHash.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/K4os.Hash.xxHash.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -1257,7 +1314,7 @@
           }
         }
       },
-      "Microsoft.DotNet.Scaffolding.Shared/7.0.9": {
+      "Microsoft.DotNet.Scaffolding.Shared/7.0.10": {
         "type": "package",
         "dependencies": {
           "Humanizer": "2.14.1",
@@ -1759,11 +1816,11 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration/7.0.9": {
+      "Microsoft.VisualStudio.Web.CodeGeneration/7.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "7.0.9"
+          "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "7.0.10"
         },
         "compile": {
           "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.dll": {
@@ -1776,11 +1833,11 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Core/7.0.9": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Core/7.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "7.0.9",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "7.0.10",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -1794,11 +1851,11 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design/7.0.9": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design/7.0.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.DotNet.Scaffolding.Shared": "7.0.9",
-          "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "7.0.9"
+          "Microsoft.DotNet.Scaffolding.Shared": "7.0.10",
+          "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "7.0.10"
         },
         "compile": {
           "lib/net7.0/dotnet-aspnet-codegenerator-design.dll": {
@@ -1811,11 +1868,11 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/7.0.9": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/7.0.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.DotNet.Scaffolding.Shared": "7.0.9",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Core": "7.0.9"
+          "Microsoft.DotNet.Scaffolding.Shared": "7.0.10",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Core": "7.0.10"
         },
         "compile": {
           "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll": {
@@ -1828,13 +1885,13 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Templating/7.0.9": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Templating/7.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Razor.Language": "6.0.11",
           "Microsoft.CodeAnalysis.CSharp": "4.4.0",
           "Microsoft.CodeAnalysis.Razor": "6.0.11",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Utils": "7.0.9"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Utils": "7.0.10"
         },
         "compile": {
           "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll": {
@@ -1847,12 +1904,12 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Utils/7.0.9": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Utils/7.0.10": {
         "type": "package",
         "dependencies": {
           "Microsoft.Build": "17.3.2",
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.4.0",
-          "Microsoft.DotNet.Scaffolding.Shared": "7.0.9",
+          "Microsoft.DotNet.Scaffolding.Shared": "7.0.10",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -1866,11 +1923,11 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/7.0.9": {
+      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/7.0.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.DotNet.Scaffolding.Shared": "7.0.9",
-          "Microsoft.VisualStudio.Web.CodeGeneration": "7.0.9"
+          "Microsoft.DotNet.Scaffolding.Shared": "7.0.10",
+          "Microsoft.VisualStudio.Web.CodeGeneration": "7.0.10"
         },
         "compile": {
           "lib/net7.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {
@@ -1928,6 +1985,74 @@
         },
         "runtime": {
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
+        }
+      },
+      "MySql.Data/8.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.21.9",
+          "K4os.Compression.LZ4.Streams": "1.3.5",
+          "Portable.BouncyCastle": "1.9.0",
+          "System.Buffers": "4.5.1",
+          "System.Configuration.ConfigurationManager": "4.4.1",
+          "System.Diagnostics.DiagnosticSource": "7.0.2",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Runtime.Loader": "4.3.0",
+          "System.Security.Permissions": "4.7.0",
+          "System.Text.Encoding.CodePages": "4.4.0",
+          "System.Text.Json": "7.0.1",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "ZstdSharp.Port": "0.7.1"
+        },
+        "compile": {
+          "lib/net7.0/MySql.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/MySql.Data.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/comerr64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/gssapi64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/k5sprt64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/krb5_64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/krbcc64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "MySql.EntityFrameworkCore/7.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.5",
+          "MySql.Data": "8.1.0"
+        },
+        "compile": {
+          "lib/net7.0/MySql.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/MySql.EntityFrameworkCore.dll": {
+            "related": ".xml"
+          }
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -2100,6 +2225,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
+        }
+      },
+      "Portable.BouncyCastle/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -2287,20 +2425,13 @@
           "lib/netstandard1.6/System.AppContext.dll": {}
         }
       },
-      "System.Buffers/4.3.0": {
+      "System.Buffers/4.5.1": {
         "type": "package",
-        "dependencies": {
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Diagnostics.Tracing": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
         "compile": {
-          "lib/netstandard1.1/_._": {}
+          "ref/netcoreapp2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.1/System.Buffers.dll": {}
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.CodeDom/4.4.0": {
@@ -2530,23 +2661,20 @@
           }
         }
       },
-      "System.Diagnostics.DiagnosticSource/6.0.0": {
+      "System.Diagnostics.DiagnosticSource/7.0.2": {
         "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
         "compile": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
+          "lib/net7.0/System.Diagnostics.DiagnosticSource.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
+          "lib/net7.0/System.Diagnostics.DiagnosticSource.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Diagnostics.Tools/4.3.0": {
@@ -3267,6 +3395,22 @@
           }
         }
       },
+      "System.Runtime.Loader/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.Loader.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.5/System.Runtime.Loader.dll": {}
+        }
+      },
       "System.Runtime.Numerics/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3682,7 +3826,7 @@
           }
         }
       },
-      "System.Text.Json/7.0.0": {
+      "System.Text.Json/7.0.1": {
         "type": "package",
         "dependencies": {
           "System.Text.Encodings.Web": "7.0.0"
@@ -3853,6 +3997,15 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "ZstdSharp.Port/0.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/ZstdSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/ZstdSharp.dll": {}
+        }
       }
     }
   },
@@ -3893,6 +4046,29 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "Google.Protobuf/3.21.9": {
+      "sha512": "OTpFujTgkmqMLbg3KT7F/iuKi1rg6s5FCS2M9XcVLDn40zL8wgXm37CY/F6MeOEXKjdcnXGCN/h7oyMkVydVsg==",
+      "type": "package",
+      "path": "google.protobuf/3.21.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "google.protobuf.3.21.9.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/net5.0/Google.Protobuf.dll",
+        "lib/net5.0/Google.Protobuf.pdb",
+        "lib/net5.0/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
+        "lib/netstandard2.0/Google.Protobuf.dll",
+        "lib/netstandard2.0/Google.Protobuf.pdb",
+        "lib/netstandard2.0/Google.Protobuf.xml"
       ]
     },
     "Humanizer/2.14.1": {
@@ -4639,6 +4815,69 @@
         "lib/netstandard1.0/zh-Hant/Humanizer.resources.dll",
         "lib/netstandard2.0/zh-Hant/Humanizer.resources.dll",
         "logo.png"
+      ]
+    },
+    "K4os.Compression.LZ4/1.3.5": {
+      "sha512": "TS4mqlT0X1OlnvOGNfl02QdVUhuqgWuCnn7UxupIa7C9Pb6qlQ5yZA2sPhRh0OSmVULaQU64KV4wJuu//UyVQQ==",
+      "type": "package",
+      "path": "k4os.compression.lz4/1.3.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "k4os.compression.lz4.1.3.5.nupkg.sha512",
+        "k4os.compression.lz4.nuspec",
+        "lib/net462/K4os.Compression.LZ4.dll",
+        "lib/net462/K4os.Compression.LZ4.xml",
+        "lib/net5.0/K4os.Compression.LZ4.dll",
+        "lib/net5.0/K4os.Compression.LZ4.xml",
+        "lib/net6.0/K4os.Compression.LZ4.dll",
+        "lib/net6.0/K4os.Compression.LZ4.xml",
+        "lib/netstandard2.0/K4os.Compression.LZ4.dll",
+        "lib/netstandard2.0/K4os.Compression.LZ4.xml",
+        "lib/netstandard2.1/K4os.Compression.LZ4.dll",
+        "lib/netstandard2.1/K4os.Compression.LZ4.xml"
+      ]
+    },
+    "K4os.Compression.LZ4.Streams/1.3.5": {
+      "sha512": "M0NufZI8ym3mm6F6HMSPz1jw7TJGdY74fjAtbIXATmnAva/8xLz50eQZJI9tf9mMeHUaFDg76N1BmEh8GR5zeA==",
+      "type": "package",
+      "path": "k4os.compression.lz4.streams/1.3.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "k4os.compression.lz4.streams.1.3.5.nupkg.sha512",
+        "k4os.compression.lz4.streams.nuspec",
+        "lib/net462/K4os.Compression.LZ4.Streams.dll",
+        "lib/net462/K4os.Compression.LZ4.Streams.xml",
+        "lib/net5.0/K4os.Compression.LZ4.Streams.dll",
+        "lib/net5.0/K4os.Compression.LZ4.Streams.xml",
+        "lib/net6.0/K4os.Compression.LZ4.Streams.dll",
+        "lib/net6.0/K4os.Compression.LZ4.Streams.xml",
+        "lib/netstandard2.0/K4os.Compression.LZ4.Streams.dll",
+        "lib/netstandard2.0/K4os.Compression.LZ4.Streams.xml",
+        "lib/netstandard2.1/K4os.Compression.LZ4.Streams.dll",
+        "lib/netstandard2.1/K4os.Compression.LZ4.Streams.xml"
+      ]
+    },
+    "K4os.Hash.xxHash/1.0.8": {
+      "sha512": "Wp2F7BamQ2Q/7Hk834nV9vRQapgcr8kgv9Jvfm8J3D0IhDqZMMl+a2yxUq5ltJitvXvQfB8W6K4F4fCbw/P6YQ==",
+      "type": "package",
+      "path": "k4os.hash.xxhash/1.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "k4os.hash.xxhash.1.0.8.nupkg.sha512",
+        "k4os.hash.xxhash.nuspec",
+        "lib/net462/K4os.Hash.xxHash.dll",
+        "lib/net462/K4os.Hash.xxHash.xml",
+        "lib/net5.0/K4os.Hash.xxHash.dll",
+        "lib/net5.0/K4os.Hash.xxHash.xml",
+        "lib/net6.0/K4os.Hash.xxHash.dll",
+        "lib/net6.0/K4os.Hash.xxHash.xml",
+        "lib/netstandard2.0/K4os.Hash.xxHash.dll",
+        "lib/netstandard2.0/K4os.Hash.xxHash.xml",
+        "lib/netstandard2.1/K4os.Hash.xxHash.dll",
+        "lib/netstandard2.1/K4os.Hash.xxHash.xml"
       ]
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.11": {
@@ -5500,17 +5739,17 @@
         "microsoft.diasymreader.nuspec"
       ]
     },
-    "Microsoft.DotNet.Scaffolding.Shared/7.0.9": {
-      "sha512": "IGksKc8Ydfg/LpupvFZEO7LKevek+SuZZiIJhq1VFtn9/eI5AkgP4/DqJNGoXkk5SKytzEJ0KZaiIwbAtDNpgA==",
+    "Microsoft.DotNet.Scaffolding.Shared/7.0.10": {
+      "sha512": "m6+MmjRbregd3+KzzUZHl6JA9C0KD9GC4WnQ9YpfP7fx6187HGhRVX2ctwVUmp6vY9LHtZ8+WEJG2Eu0G4J8OQ==",
       "type": "package",
-      "path": "microsoft.dotnet.scaffolding.shared/7.0.9",
+      "path": "microsoft.dotnet.scaffolding.shared/7.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net7.0/Microsoft.DotNet.Scaffolding.Shared.dll",
         "lib/net7.0/Microsoft.DotNet.Scaffolding.Shared.xml",
-        "microsoft.dotnet.scaffolding.shared.7.0.9.nupkg.sha512",
+        "microsoft.dotnet.scaffolding.shared.7.0.10.nupkg.sha512",
         "microsoft.dotnet.scaffolding.shared.nuspec"
       ]
     },
@@ -6205,38 +6444,38 @@
         "microsoft.sqlserver.server.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration/7.0.9": {
-      "sha512": "iEPNQsNomfAZ2c9k6NGSWTS+f+9QJWPFO5umGBJqU2VFSoWEyOPyYp6BoisUxWo98o53+RxM9CilQa/Q6cXnQg==",
+    "Microsoft.VisualStudio.Web.CodeGeneration/7.0.10": {
+      "sha512": "woqv1Q8JABOO5Asr9A9DPBglKIFjnq+/Mc8HItMpVDXAYTq0l2VG4Jzvk6UG5XBbK4xgvM0+vFRmOaXx/HOVBw==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration/7.0.9",
+      "path": "microsoft.visualstudio.web.codegeneration/7.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.dll",
         "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.xml",
-        "microsoft.visualstudio.web.codegeneration.7.0.9.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.7.0.10.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Core/7.0.9": {
-      "sha512": "2f8le37MGS12b8l9/q5JfheGRSTRvHBC896gA1ajit9uYfps/vYGhJwoKvL81CLiZLd5ZJQp1SY61bFtbz810w==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Core/7.0.10": {
+      "sha512": "UTRU0EtlkVI7ii5BQ3u8azoCTsdUMRtkMLlTG9XS7cps/kCeHia4Cn96Hwq+G37lk/eEzl1fPWgwuMX4MC9yfA==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.core/7.0.9",
+      "path": "microsoft.visualstudio.web.codegeneration.core/7.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll",
         "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.xml",
-        "microsoft.visualstudio.web.codegeneration.core.7.0.9.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.core.7.0.10.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.core.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Design/7.0.9": {
-      "sha512": "EC7e2Lh3P0DHk77TxCY1h4O/22WpvmzJ6so4CT64Xs8hK4QUKFvzMu0RhECW89J46CNZJM11CMfz8F1SKU25Mg==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Design/7.0.10": {
+      "sha512": "A9zDdvXjB6Kg0bbYKNBN9SjquGRpxeQo5oD1LGsrHRjGRPn00QHTrAGJI9NGQNgBc7CIi4LKHMsTgxVL77w3WA==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.design/7.0.9",
+      "path": "microsoft.visualstudio.web.codegeneration.design/7.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6244,14 +6483,14 @@
         "README.md",
         "lib/net7.0/dotnet-aspnet-codegenerator-design.dll",
         "lib/net7.0/dotnet-aspnet-codegenerator-design.xml",
-        "microsoft.visualstudio.web.codegeneration.design.7.0.9.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.design.7.0.10.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.design.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/7.0.9": {
-      "sha512": "XpMBoCiiCfHHAfczxIse3y0kDDD8sBnL28o6YX/GXl/hcn6+C8Y++6/M0/N6qn+2woYcnawswxUuLUMbVKNEeQ==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/7.0.10": {
+      "sha512": "wgmdnxD3SQyfvDIYk5JEz6A30hosAkHcb00ozmy02sxj5gxy9DXi5tBcFocIXMFlbvXRfSo/qyy/yF3pNq3hCQ==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/7.0.9",
+      "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/7.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6260,42 +6499,42 @@
         "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll",
         "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.runtimeconfig.json",
         "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.xml",
-        "microsoft.visualstudio.web.codegeneration.entityframeworkcore.7.0.9.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.entityframeworkcore.7.0.10.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Templating/7.0.9": {
-      "sha512": "NzDoTGOMe83zU8PQFozppXLJJVBgDyLlNU819QgmO3dTwjSnbXvNZgNvZuNKC6xcG6ZSJGXgi2Dy0MgKigvAxw==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Templating/7.0.10": {
+      "sha512": "4ljx3V6hjdiy1n2UApGQiXx1u7RBB89uyT6zg/R1lziwh/vVXKMwokpg9MdH9r+YNrW3tPE7CbRlo3bSiXC/mg==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.templating/7.0.9",
+      "path": "microsoft.visualstudio.web.codegeneration.templating/7.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll",
         "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.xml",
-        "microsoft.visualstudio.web.codegeneration.templating.7.0.9.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.templating.7.0.10.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.templating.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Utils/7.0.9": {
-      "sha512": "iSFnAhHmjMqRd4p3ZhUUBcJv0n7EAFTVsQJ1olgQNmWW4FUjnwi9m6SdrF9zsrDXfwHsHpszMFsDBj1WzKixpg==",
+    "Microsoft.VisualStudio.Web.CodeGeneration.Utils/7.0.10": {
+      "sha512": "0lcG9iu5HGOBdTd3Mn3Pb+Vj824fLTU20GQgefDUgV3+asn7gpWV7/SMSPvgROnpllDHMGjBL78d00bcNRciLA==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegeneration.utils/7.0.9",
+      "path": "microsoft.visualstudio.web.codegeneration.utils/7.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll",
         "lib/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.xml",
-        "microsoft.visualstudio.web.codegeneration.utils.7.0.9.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.utils.7.0.10.nupkg.sha512",
         "microsoft.visualstudio.web.codegeneration.utils.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/7.0.9": {
-      "sha512": "Gn535RDpSW8pY3zvgYKn29YNf7MdN96Xk/cZ+PZU+13wAEV6Id1OX0WpHGfkUtVO9JUEzzJeEm+cy19sukwT3w==",
+    "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/7.0.10": {
+      "sha512": "0F5Ud5wkphBc5CW9lOkGiQbWgapqT7BmwCo4CuL8NuOtti/8ZN5OwI1miHWKdnKajEyovTs3sV1jxp39hy6XKg==",
       "type": "package",
-      "path": "microsoft.visualstudio.web.codegenerators.mvc/7.0.9",
+      "path": "microsoft.visualstudio.web.codegenerators.mvc/7.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6762,7 +7001,7 @@
         "lib/net7.0/bootstrap5_identitygeneratorfilesconfig.json",
         "lib/net7.0/identityMinimalHostingChanges.json",
         "lib/net7.0/minimalApiChanges.json",
-        "microsoft.visualstudio.web.codegenerators.mvc.7.0.9.nupkg.sha512",
+        "microsoft.visualstudio.web.codegenerators.mvc.7.0.10.nupkg.sha512",
         "microsoft.visualstudio.web.codegenerators.mvc.nuspec"
       ]
     },
@@ -6844,6 +7083,50 @@
         "lib/netstandard2.0/Mono.TextTemplating.dll",
         "mono.texttemplating.2.2.1.nupkg.sha512",
         "mono.texttemplating.nuspec"
+      ]
+    },
+    "MySql.Data/8.1.0": {
+      "sha512": "7kEJLyty7HcqJD0lnfs+2fdMrvCl0RY5oykvZThbmg6QVLT55dwygI69Eqxl0M6IThP9woyjpsezT6m7gKRrLA==",
+      "type": "package",
+      "path": "mysql.data/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/MySql.Data.dll",
+        "lib/net462/MySql.Data.xml",
+        "lib/net48/MySql.Data.dll",
+        "lib/net48/MySql.Data.xml",
+        "lib/net6.0/MySql.Data.dll",
+        "lib/net6.0/MySql.Data.xml",
+        "lib/net7.0/MySql.Data.dll",
+        "lib/net7.0/MySql.Data.xml",
+        "lib/netstandard2.0/MySql.Data.dll",
+        "lib/netstandard2.0/MySql.Data.xml",
+        "lib/netstandard2.1/MySql.Data.dll",
+        "lib/netstandard2.1/MySql.Data.xml",
+        "logo-mysql-170x115.png",
+        "mysql.data.8.1.0.nupkg.sha512",
+        "mysql.data.nuspec",
+        "runtimes/win-x64/native/comerr64.dll",
+        "runtimes/win-x64/native/gssapi64.dll",
+        "runtimes/win-x64/native/k5sprt64.dll",
+        "runtimes/win-x64/native/krb5_64.dll",
+        "runtimes/win-x64/native/krbcc64.dll"
+      ]
+    },
+    "MySql.EntityFrameworkCore/7.0.5": {
+      "sha512": "cgAuQZqGaqWm+7B7CZ1fIJrA4/V8JITFuRAC5FEWlhvZA0SM9pH7iYzaCla4gsk97n81ZBqLJyquUI5VTucG3w==",
+      "type": "package",
+      "path": "mysql.entityframeworkcore/7.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/MySql.EntityFrameworkCore.dll",
+        "lib/net6.0/MySql.EntityFrameworkCore.xml",
+        "lib/net7.0/MySql.EntityFrameworkCore.dll",
+        "lib/net7.0/MySql.EntityFrameworkCore.xml",
+        "mysql.entityframeworkcore.7.0.5.nupkg.sha512",
+        "mysql.entityframeworkcore.nuspec"
       ]
     },
     "NETStandard.Library/1.6.1": {
@@ -7023,6 +7306,21 @@
         "lib/netstandard2.0/NuGet.Versioning.dll",
         "nuget.versioning.6.6.1.nupkg.sha512",
         "nuget.versioning.nuspec"
+      ]
+    },
+    "Portable.BouncyCastle/1.9.0": {
+      "sha512": "eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
+      "type": "package",
+      "path": "portable.bouncycastle/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/BouncyCastle.Crypto.dll",
+        "lib/net40/BouncyCastle.Crypto.xml",
+        "lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "lib/netstandard2.0/BouncyCastle.Crypto.xml",
+        "portable.bouncycastle.1.9.0.nupkg.sha512",
+        "portable.bouncycastle.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -7304,19 +7602,35 @@
         "system.appcontext.nuspec"
       ]
     },
-    "System.Buffers/4.3.0": {
-      "sha512": "ratu44uTIHgeBeI0dE8DWvmXVBSo4u7ozRZZHOMmK/JPpYyo0dAfgSiHlpiObMQ5lEtEyIXA40sKRYg5J6A8uQ==",
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "type": "package",
-      "path": "system.buffers/4.3.0",
+      "path": "system.buffers/4.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.1/.xml",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
         "lib/netstandard1.1/System.Buffers.dll",
-        "system.buffers.4.3.0.nupkg.sha512",
-        "system.buffers.nuspec"
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.CodeDom/4.4.0": {
@@ -7781,27 +8095,29 @@
         "system.diagnostics.debug.nuspec"
       ]
     },
-    "System.Diagnostics.DiagnosticSource/6.0.0": {
-      "sha512": "frQDfv0rl209cKm1lnwTgFPzNigy2EKk1BS3uAvHvlBVKe5cymGyHO+Sj+NLv5VF/AhHsqPIUUwya5oV4CHMUw==",
+    "System.Diagnostics.DiagnosticSource/7.0.2": {
+      "sha512": "hYr3I9N9811e0Bjf2WNwAGGyTuAFbbTgX1RPLt/3Wbm68x3IGcX5Cl75CMmgT6WlNwLQ2tCCWfqYPpypjaf2xA==",
       "type": "package",
-      "path": "system.diagnostics.diagnosticsource/6.0.0",
+      "path": "system.diagnostics.diagnosticsource/7.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Diagnostics.DiagnosticSource.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.Diagnostics.DiagnosticSource.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Diagnostics.DiagnosticSource.dll",
-        "lib/net461/System.Diagnostics.DiagnosticSource.xml",
-        "lib/net5.0/System.Diagnostics.DiagnosticSource.dll",
-        "lib/net5.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net462/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net462/System.Diagnostics.DiagnosticSource.xml",
         "lib/net6.0/System.Diagnostics.DiagnosticSource.dll",
         "lib/net6.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net7.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net7.0/System.Diagnostics.DiagnosticSource.xml",
         "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
         "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.xml",
-        "system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -9867,6 +10183,38 @@
         "system.runtime.interopservices.runtimeinformation.nuspec"
       ]
     },
+    "System.Runtime.Loader/4.3.0": {
+      "sha512": "DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
+      "type": "package",
+      "path": "system.runtime.loader/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/_._",
+        "lib/netstandard1.5/System.Runtime.Loader.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/netstandard1.5/System.Runtime.Loader.dll",
+        "ref/netstandard1.5/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/de/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/es/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/fr/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/it/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ja/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ko/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ru/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.Loader.xml",
+        "system.runtime.loader.4.3.0.nupkg.sha512",
+        "system.runtime.loader.nuspec"
+      ]
+    },
     "System.Runtime.Numerics/4.3.0": {
       "sha512": "yMH+MfdzHjy17l2KESnPiF2dwq7T+xLnSJar7slyimAkUh/gTrS9/UQOtv7xarskJ2/XDSNvfLGOBQPjL7PaHQ==",
       "type": "package",
@@ -10624,10 +10972,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Text.Json/7.0.0": {
-      "sha512": "DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
+    "System.Text.Json/7.0.1": {
+      "sha512": "OtDEmCCiNl8JAduFKZ/r0Sw6XZNHwIicUYy/mXgMDGeOsZLshH37qi3oPRzFYiryVktiMoQLByMGPtRCEMYbeQ==",
       "type": "package",
-      "path": "system.text.json/7.0.0",
+      "path": "system.text.json/7.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -10690,7 +11038,7 @@
         "lib/net7.0/System.Text.Json.xml",
         "lib/netstandard2.0/System.Text.Json.dll",
         "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.7.0.0.nupkg.sha512",
+        "system.text.json.7.0.1.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -11199,13 +11547,33 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "ZstdSharp.Port/0.7.1": {
+      "sha512": "Idgg+mJEyAujqDPzA3APy9dNoyw0YQcNA65GgYjktDRtJ+nvx/hv+J+m6Eax3JJMGEYGy04oc5YNP6ZvQ3Y1vQ==",
+      "type": "package",
+      "path": "zstdsharp.port/0.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/ZstdSharp.dll",
+        "lib/net5.0/ZstdSharp.dll",
+        "lib/net6.0/ZstdSharp.dll",
+        "lib/net7.0/ZstdSharp.dll",
+        "lib/netcoreapp3.1/ZstdSharp.dll",
+        "lib/netstandard2.0/ZstdSharp.dll",
+        "lib/netstandard2.1/ZstdSharp.dll",
+        "zstdsharp.port.0.7.1.nupkg.sha512",
+        "zstdsharp.port.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Microsoft.EntityFrameworkCore >= 7.0.12",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.12",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.12",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.9"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.10",
+      "MySql.EntityFrameworkCore >= 7.0.5"
     ]
   },
   "packageFolders": {
@@ -11247,6 +11615,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.12, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.12, )"
@@ -11259,7 +11631,11 @@
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "[7.0.9, )"
+            "version": "[7.0.10, )"
+          },
+          "MySql.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.5, )"
           }
         },
         "imports": [
