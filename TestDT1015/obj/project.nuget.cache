@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qCUPLGQZaWgjFGYrO56FW5Uv6oS7rZA5E67jnHNdMEFITFVCkKwJGBqAdo1Au88LAt0IdXS2pNhVYuXkEtvBsQ==",
+  "dgSpecHash": "vafeJw/zdgcz9yQkbS4minEs752HOH7JVO53kmZklm3bWXKq/R0o09kBUsU2mOxxzAbiYEawtIpcXhGuKxwmKA==",
   "success": true,
   "projectFilePath": "C:\\Users\\tamul\\source\\repos\\TestDT1015\\TestDT1015\\TestDT1015.csproj",
   "expectedPackageFiles": [
@@ -109,6 +109,7 @@
     "C:\\Users\\tamul\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\tamul\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\tamul\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\tamul\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
     "C:\\Users\\tamul\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\7.0.10\\microsoft.visualstudio.web.codegeneration.7.0.10.nupkg.sha512",
     "C:\\Users\\tamul\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\7.0.10\\microsoft.visualstudio.web.codegeneration.core.7.0.10.nupkg.sha512",
     "C:\\Users\\tamul\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\7.0.10\\microsoft.visualstudio.web.codegeneration.design.7.0.10.nupkg.sha512",
