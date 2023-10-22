@@ -25,6 +25,7 @@ env:
   DEPLOYMENT_NAME: gke-test # TODO: update to deployment name
   REPOSITORY: clouddemo
   IMAGE: static-site
+  REPOSITORY_REGION: us-central1
 
 jobs:
   setup-build-publish-deploy:
