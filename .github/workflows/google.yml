@@ -66,6 +66,12 @@ jobs:
         cluster_name: ${{ env.GKE_CLUSTER }}
         location: ${{ env.GKE_ZONE }}
 
+    - name: Create image tag
+      run: echo "IMAGE_TAG=${{ env.REPOSITORY_REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.REPOSITORY }}/${{ env.IMAGE }}:$GITHUB_SHA" >> $GITHUB_ENV
+
+    - name: Lock image version in deployment.yaml
+      run: sed -i 's|TESTDT1015_IMAGE|${{ env.IMAGE_TAG }}|g' deployment.yaml
+
     # Build the Docker image
     - name: Build
       run: |-
